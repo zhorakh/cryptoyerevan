@@ -1,0 +1,33 @@
+.language-switcher {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  z-index: 100;
+  display: flex;
+  gap: 0.5em;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  height: auto;
+  line-height: 1;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.lang-btn.active {
+  background: #1cb495;
+  border-color: #1cb495;
+  color: #fff !important;
+}
