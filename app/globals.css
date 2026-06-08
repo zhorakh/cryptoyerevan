@@ -186,6 +186,41 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 @media screen and (max-width: 736px) { #header h1 { font-size: 2em; } #header p { font-size: 1em; } }
 @media screen and (max-width: 480px) { #header { margin: 0 0 1em 0; } }
 
+.header-points { list-style: none; padding: 0; margin: 0.5em 0 1.5em 0; }
+.header-points li { display: flex; align-items: baseline; gap: 0.5em; margin-bottom: 0.5em; color: rgba(255,255,255,0.85); font-size: 1.1em; line-height: 1.4em; }
+.header-points .bullet { color: #1cb495; font-size: 0.6em; flex-shrink: 0; }
+@media screen and (max-width: 736px) { .header-points li { font-size: 0.95em; } }
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(28, 180, 149, 0.5); }
+  70% { box-shadow: 0 0 0 10px rgba(28, 180, 149, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(28, 180, 149, 0); }
+}
+.phone-link {
+  display: inline-flex; align-items: center; gap: 0.7em;
+  background: linear-gradient(135deg, #1cb495 0%, #0e8a6e 100%);
+  color: #fff !important; border: none;
+  padding: 0.75em 1.6em; border-radius: 50px; font-size: 1.2em;
+  font-weight: 700; text-decoration: none; margin-top: 0.8em;
+  box-shadow: 0 4px 20px rgba(28, 180, 149, 0.4);
+  transition: all 0.3s ease;
+}
+.phone-link:hover {
+  color: #fff !important;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 30px rgba(28, 180, 149, 0.6);
+}
+.phone-icon {
+  font-size: 1em;
+  background: rgba(255,255,255,0.2);
+  width: 2em; height: 2em;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  animation: pulse-ring 2s ease infinite;
+}
+.phone-number { letter-spacing: 0.05em; }
+@media screen and (max-width: 736px) { .phone-link { font-size: 1em; padding: 0.6em 1.3em; } }
+
 #signup-form { display: flex; position: relative; }
 #signup-form input[type="text"], #signup-form input[type="password"], #signup-form input[type="email"] { width: 18em; }
 #signup-form > * { margin: 0 0 0 1em; }

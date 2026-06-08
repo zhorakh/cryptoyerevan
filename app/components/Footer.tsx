@@ -5,8 +5,8 @@ export default function Footer() {
     <footer id="footer">
       <ul className="icons">
         <li>
-          <a href="#" className="icon brands fa-twitter">
-            <span className="label">Twitter</span>
+          <a href="https://t.me/zhorakhachatryan" target="_blank" rel="noopener noreferrer" className="icon brands fa-telegram">
+            <span className="label">Telegram</span>
           </a>
         </li>
         <li>
@@ -15,7 +15,12 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="#" className="icon fa-envelope">
+          <a href="#" className="icon brands fa-facebook">
+            <span className="label">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:zhorakhachatryan1993@gmail.com" className="icon fa-envelope">
             <span className="label">Email</span>
           </a>
         </li>
